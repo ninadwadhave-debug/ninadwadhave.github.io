@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninad Wadhave | Evolutionary Genomics</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body { background-color: #000000 !important; color: #ffffff; }
+    </style>
+</head>
+<body>
+
+    <canvas id="bio-canvas"></canvas>
+    
+    <div class="noise-overlay"></div>
+    
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav class="cinematic-nav">
+        <a href="#" class="logo">NW<span class="highlight">.</span></a>
+        <div class="nav-links">
+            <a href="#about" class="magnetic">About</a>
+            <a href="#experience" class="magnetic">Experience</a>
+            <a href="#projects" class="magnetic">Projects</a>
+            <a href="#skills" class="magnetic">Skills</a>
+            <a href="#contact" class="magnetic highlight">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-layout">
+            <div class="hero-text">
+                <p class="overline reveal-text">BS-MS Biological Sciences • IISER Bhopal</p>
+                <h1 class="hero-title reveal-text">
+                    Deciphering the<br>
+                    <span class="italic-accent">Code of Life.</span>
+                </h1>
+                <p class="hero-bio reveal-text">
+                    Bridging the gap between <strong>phenotypic observation</strong> and <strong>molecular drivers</strong>. 
+                    I use computational tools (Python/R) to investigate how genetic variation arises, persists, and drives adaptation in complex populations.
+                </p>
+                <div class="hero-actions reveal-text">
+                    <a href="#experience" class="btn-glow magnetic">View Research</a>
+                    <a href="assets/cv.pdf" target="_blank" class="btn-text magnetic">Download CV <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal-img">
+                <div class="image-frame">
+                    <img src="assets/profile.jpg" alt="Ninad Wadhave" class="profile-img">
+                    <div class="frame-accent"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-prompt">
+            <span>Scroll to Discover</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="label-wrap"><span class="section-label">01 / Profile</span></div>
+            <div class="manifesto-content">
+                <h2 class="big-statement reveal-text">
+                    "From Field to <span class="highlight">Algorithm.</span>"
+                </h2>
+                <div class="manifesto-grid">
+                    <div class="manifesto-text reveal-text">
+                        <p>
+                            I aim to conduct Master's research in <strong>Evolutionary Genomics</strong>. My background combines rigorous ecological fieldwork with quantitative modeling.
+                        </p>
+                        <p>
+                            Currently a Dual Degree student (BS-MS) at IISER Bhopal (Graduating 2027), I am seeking to contribute my computational background to a rigorous research group.
+                        </p>
+                    </div>
+                    <div class="stats-row reveal-text">
+                        <div class="stat-item glass-panel">
+                            <h3>IISc</h3>
+                            <p>Competitive Intern</p>
+                        </div>
+                        <div class="stat-item glass-panel">
+                            <h3>Gold</h3>
+                            <p>Olympiad Medalist</p>
+                        </div>
+                        <div class="stat-item glass-panel">
+                            <h3>NTSE</h3>
+                            <p>Govt. Scholar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="label-wrap"><span class="section-label">02 / Experience</span></div>
+            
+            <div class="project-list">
+                
+                <div class="project-card glass-panel reveal-text">
+                    <div class="project-meta">
+                        <span class="year">May 2025 - July 2025</span>
+                        <span class="location">IISc Bangalore</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ecological Impacts of ALAN</h3>
+                        <p class="project-role">Guide: Dr. Maria Thaker</p>
+                        <p class="project-desc">
+                            Assessed the impact of Artificial Light at Night (ALAN) on the <em>Peninsular rock agama</em>. Conducted standardized quantitative behavioural sampling and managed handling of live organisms under ethical protocols.
+                        </p>
+                        <div class="tags">
+                            <span>Ethology</span><span>Fieldwork</span><span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel reveal-text">
+                    <div class="project-meta">
+                        <span class="year">Dec 2024</span>
+                        <span class="location">Tree Lab, IISERB</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Pollen Diversity & Avian Behaviour</h3>
+                        <p class="project-role">Guide: Dr. Vinita Gowda</p>
+                        <p class="project-desc">
+                            Investigated nectar-volume discrimination in <em>Purple Sunbirds</em>. Designed artificial-flower arrays to quantify foraging decisions and understand ecological trade-offs.
+                        </p>
+                        <div class="tags">
+                            <span>Experimental Design</span><span>Avian Biology</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel reveal-text">
+                    <div class="project-meta">
+                        <span class="year">May 2024 - July 2024</span>
+                        <span class="location">ICMR-NIREH</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Water-Contaminant Remediation</h3>
+                        <p class="project-role">Guide: Dr. Surya Singh</p>
+                        <p class="project-desc">
+                            Engineered sustainable solutions for water contamination. Investigated remediation using natural biosorbents, successfully achieving ~70% pollutant removal efficiency.
+                        </p>
+                        <div class="tags">
+                            <span>Biochemistry</span><span>Filtration Assays</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel reveal-text">
+                    <div class="project-meta">
+                        <span class="year">Dec 2023</span>
+                        <span class="location">CSIR-CCMB</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ecological Trade-offs Review</h3>
+                        <p class="project-role">Guide: Dr. Meghna Krishnadas</p>
+                        <p class="project-desc">
+                            Conducted an extensive critical literature review on the ecological trade-offs between plant herbivory defense and pollinator interactions.
+                        </p>
+                        <div class="tags">
+                            <span>Literature Review</span><span>Plant Ecology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="label-wrap"><span class="section-label">03 / Academic Projects</span></div>
+            <div class="arsenal-grid">
+                
+                <div class="arsenal-card glass-panel magnetic reveal-text">
+                    <div class="icon-box"><i class="fas fa-wave-square"></i></div>
+                    <h4>Evolutionary Ecology Simulation</h4>
+                    <p class="project-sub">Semester Project</p>
+                    <p class="card-text">
+                        Developed a computational simulation model for avian vocalizations to study evolutionary patterns in bird song frequency. Implemented using <strong>Python/R</strong>.
+                    </p>
+                </div>
+
+                <div class="arsenal-card glass-panel magnetic reveal-text">
+                    <div class="icon-box"><i class="fas fa-brain"></i></div>
+                    <h4>Behavioural Cognition Study</h4>
+                    <p class="project-sub">Course Project</p>
+                    <p class="card-text">
+                        Led a behavioural-cognition study (n=150), overseeing experimental design, data collection, and statistical evaluation.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="label-wrap"><span class="section-label">04 / Skills</span></div>
+            
+            <div class="skills-wrapper glass-panel reveal-text">
+                <div class="skill-column">
+                    <h4>Computation & Code</h4>
+                    <ul>
+                        <li>Python (Pandas, NumPy)</li>
+                        <li>R (Statistical Analysis)</li>
+                        <li>C++ (Basic)</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h4>Analysis & Modeling</h4>
+                    <ul>
+                        <li>Hypothesis Testing</li>
+                        <li>Regression Analysis</li>
+                        <li>Bio-acoustic Modeling</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h4>Geospatial & Field</h4>
+                    <ul>
+                        <li>QGIS (Spatial Analysis)</li>
+                        <li>GPS Logging</li>
+                        <li>Standardized Sampling</li>
+                        <li>Behavioural Observation</li>
+                    </ul>
+                </div>
+                 <div class="skill-column">
+                    <h4>Laboratory</h4>
+                    <ul>
+                        <li>Filtration Assays</li>
+                        <li>Specimen Handling</li>
+                        <li>Contamination Control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section footer-section">
+        <div class="container">
+            <div class="label-wrap"><span class="section-label">05 / Initiate Contact</span></div>
+            
+            <div class="footer-content">
+                <p class="contact-pre">Ready for the next breakthrough?</p>
+                
+                <div class="contact-grid">
+                    <a href="mailto:wadhave22@iiserb.ac.in" class="contact-pill magnetic">
+                        <div class="pill-icon"><i class="fas fa-university"></i></div>
+                        <div class="pill-text">
+                            <span class="label">Institute Email</span>
+                            <span class="value">wadhave22@iiserb.ac.in</span>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:ninadwadhave@gmail.com" class="contact-pill magnetic">
+                        <div class="pill-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="pill-text">
+                            <span class="label">Personal Email</span>
+                            <span class="value">ninadwadhave@gmail.com</span>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+918483965466" class="contact-pill magnetic">
+                        <div class="pill-icon"><i class="fas fa-phone"></i></div>
+                        <div class="pill-text">
+                            <span class="label">Phone</span>
+                            <span class="value">+91 84839 65466</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/ninad-wadhave-6906a92a1" target="_blank" class="magnetic">LinkedIn Profile</a>
+                    <a href="#" class="magnetic">GitHub Repository</a>
+                </div>
+                
+                <div class="copyright">
+                    &copy; 2025 Ninad Wadhave. <span class="highlight">Architecting Evolution.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
