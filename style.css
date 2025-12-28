@@ -154,7 +154,7 @@ a { text-decoration: none; color: inherit; }
 .skill-column li { margin-bottom: 0.8rem; color: var(--text-muted); display: flex; align-items: center; }
 .skill-column li::before { content: '•'; color: var(--accent); margin-right: 10px; font-size: 1.2rem; }
 
-/* --- 8. NEW CONTACT SECTION --- */
+/* --- 8. CONTACT SECTION --- */
 .footer-section { padding-top: 5rem; padding-bottom: 4rem; }
 .contact-pre { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem; text-align: left; }
 
